@@ -21,7 +21,7 @@ void rgb_2_gray1(const cv::Mat& color, cv::Mat& gray)
 		{
 			const cv::Vec3b& c = colorData[x];
 			grayData[x] = cv::saturate_cast<uchar>(
-				0.299f * c[2] + 0.587f * c[1] + 0.144f * c[0]);
+				0.299f * c[2] + 0.587f * c[1] + 0.114f * c[0]);
 		}
 	}
 }
